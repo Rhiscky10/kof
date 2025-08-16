@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chicken Invaders Game</title>
+    <link rel="stylesheet" href="kof.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-header">
+            <h1>🐔 Chicken Invaders 🐔</h1>
+            <p>Save the world from poultry domination!</p>
+        </div>
+        
+        <div class="game-stats">
+            <span id="score">Score: 0</span>
+            <span id="high-score">High Score: 0</span>
+            <span id="wave">Wave: 1</span>
+            <span id="lives">Lives: 3</span>
+        </div>
+        
+        <div class="canvas-container">
+            <canvas id="gameCanvas" width="800" height="600"></canvas>
+            
+            <div id="menu-overlay" class="overlay">
+                <div class="menu-content">
+                    <h2>🐔 CHICKEN INVADERS 🐔</h2>
+                    <p>Save the world from poultry domination!</p>
+                    <div class="controls-info">
+                        <p>🎮 Arrow keys: Move | Space: Shoot | P: Pause</p>
+                        <p>💎 Collect power-ups: Multi-shot, Rapid-fire, Health, Bonus points</p>
+                    </div>
+                    <button id="start-btn" class="game-button">Start Game</button>
+                </div>
+            </div>
+            
+            <div id="gameover-overlay" class="overlay" style="display: none;">
+                <div class="menu-content">
+                    <h2>Game Over!</h2>
+                    <p>The chickens have won this time...</p>
+                    <p id="final-score">Final Score: 0 | Wave: 1</p>
+                    <div class="button-group">
+                        <button id="restart-btn" class="game-button">Try Again</button>
+                        <button id="menu-btn" class="game-button secondary">Menu</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="game-description">
+            <p>A complete arcade game featuring collision detection, power-up systems, wave progression, health mechanics, and visual effects. Built with HTML5 Canvas and JavaScript.</p>
+        </div>
+    </div>
+    
+    <script src="kof.js"></script>
+</body>
+</html>
